@@ -1,19 +1,21 @@
-package com.basics.threads;
+package com.tripillar_coding_assignment.module5;
 
-public class Counter {
-    public int count=0;
-    public synchronized void increment(){
+
+public class SynchronizationExample {
+    private static int count = 0;
+
+    public synchronized void increment() {
         count++;
     }
 
     public static void main(String[] args) throws Exception {
-        Counter c=new Counter();
-        Thread t1=new Thread(()->{
+        SynchronizationExample c = new SynchronizationExample();
+        Thread t1 = new Thread(() -> {
             for (int i = 0; i < 1000; i++) {
                 c.increment();
             }
         });
-        Thread t2=new Thread(()->{
+        Thread t2 = new Thread(() -> {
             for (int i = 0; i < 1000; i++) {
                 c.increment();
             }
@@ -22,8 +24,6 @@ public class Counter {
         t2.start();
         t1.join();
         t2.join();
-        System.out.println("the final count is :"+c.count);
-
-
+        System.out.println("the final count is :" + c.count);
     }
 }
