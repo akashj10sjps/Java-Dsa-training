@@ -1,5 +1,5 @@
 package com.advanced.dsa.algos;
-
+//Sum of maximum subset
 public class KadaneAlgorithm {
     public static void main(String[] args) {
         int[] arr={5,-8,1,2,-1,4};

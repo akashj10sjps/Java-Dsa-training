@@ -13,6 +13,7 @@ public class RemoveDuplicatesFromArray {
             uniqueElements.add(x);
         }
         System.out.println("Unique elements :" + uniqueElements);
+        //One line removal of duplicate elements
         Set<Integer> nonDuplicate = new HashSet<>();
         nonDuplicate.addAll(Arrays.asList(1, 3, 2, 4, 1, 2, 4, 5, 6, 7, 5, 8));
         System.out.println(nonDuplicate);
