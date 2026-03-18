@@ -15,7 +15,6 @@ public class BinaryNumberGenerator {
         }
         System.out.println();//offer=add(push),poll=remove(pop)
     }
-
     public static void main(String[] args) {
         int N=5;
         generateBinary1ToN(5);
