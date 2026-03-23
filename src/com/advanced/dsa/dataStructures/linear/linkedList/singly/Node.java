@@ -8,10 +8,14 @@ class LinkedList{
     public class Node {
         String data; //The data of the node-> String type
         Node next;//address of the next node-> Node type
+        int val;
         Node(String data){
             this.data=data;
             this.next=null;//Initially node is connected to null
             size++;//Increment the size as a node is created
+        }
+        Node(int val){
+            this.val=val;
         }
     }
     public void printList(){
