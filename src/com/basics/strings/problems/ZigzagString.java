@@ -3,7 +3,7 @@ package com.basics.strings.problems;
 public class ZigzagString {
     public static void main(String[] args) {
         String s="PAYPALISHIRING";
-        String result=convert(s,3);
+        String result=convert(s,4);
         System.out.println(result);
     }
         public static String convert(String s, int numRows) {
