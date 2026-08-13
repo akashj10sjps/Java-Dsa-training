@@ -2,7 +2,7 @@ package com.advanced.dsa.algos.backtracking;
 
 public class NQueens {
     public static void main(String[] args) {
-        int n=4;
+        int n=8;
         char[][] board =new char[n][n];
         //Initialize the board with x
         for (int i = 0; i < n; i++) {

@@ -18,5 +18,4 @@ public class HashtableDemo {
             System.out.println(entry.getKey()+"<->"+ entry.getValue());
         }
     }
-
 }
